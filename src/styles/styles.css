@@ -28,12 +28,19 @@ body {
 body .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 20px 70px;
-  position: sticky;
+  margin: 20px auto;
+  margin-top: 0;
+  padding: 15px 70px;
+  position: fixed;
   top: 0;
+  z-index: 1000;
   height: -moz-fit-content;
   height: fit-content;
+  width: 100%;
   background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  animation: load 2s ease;
 }
 body .navbar h1 {
   font-size: 2.2rem;
@@ -54,11 +61,12 @@ body .navbar .links a:hover {
 body .main {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
-  margin: 0 60px;
-  height: 80vh;
+  margin: 70px 60px;
+  min-height: 100vh;
   background-size: contain;
+  animation: load 2s ease;
 }
 body .main .intro h1 {
   font-size: 3.5rem;
@@ -69,7 +77,7 @@ body .main .role h1 {
   animation: animated 5s ease infinite;
 }
 body .main p {
-  text-align: left;
+  text-align: center;
   width: 45%;
   margin: 50px 0;
   font-size: 1.5rem;
@@ -84,7 +92,7 @@ body .main .buttonContainer button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 0 30px 0 0;
+  margin: 0 10px;
   padding: 15px;
   width: 25rem;
   font-weight: 500;
@@ -120,14 +128,14 @@ body .main .buttonContainer button:hover::before {
 body .main .icons {
   height: -moz-fit-content;
   height: fit-content;
-  width: 50%;
+  width: 100vw;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  margin: 60px 20px;
+  margin: 60px 20px 60px 90px;
 }
 body .main .icons .github {
-  scale: 5;
+  scale: 4;
   cursor: pointer;
   transition: 0.2s;
   margin: 0 70px 0 0;
@@ -145,5 +153,15 @@ body .main .icons .github:hover {
   }
   100% {
     color: #ededed;
+  }
+}
+@keyframes load {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }/*# sourceMappingURL=styles.css.map */
