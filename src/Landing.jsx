@@ -1,5 +1,10 @@
 import React from "react";
 import "./styles/styles.css";
+import { FiGithub } from "react-icons/fi";
+import { TfiTwitter } from "react-icons/tfi";
+import { FiLinkedin } from "react-icons/fi";
+import { LuInstagram } from "react-icons/lu";
+import { LiaTelegram } from "react-icons/lia";
 
 const Landing = () => {
   return (
@@ -38,6 +43,13 @@ const Landing = () => {
         <div className="buttonContainer">
           <button className="button1">Hire me</button>
           <button className="button2">Lets Talk</button>
+        </div>
+        <div className="icons">
+          <FiGithub className="github" />
+          <TfiTwitter className="github" />
+          <FiLinkedin className="github"/>
+          <LuInstagram className="github"/>
+          <LiaTelegram className="github"/>
         </div>
       </section>
     </div>
