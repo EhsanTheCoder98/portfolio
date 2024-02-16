@@ -5,6 +5,7 @@ import "./styles/styles.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import About from "./components/About";
+import Education from "./components/Education";
 
 const Landing = () => {
   return (
@@ -12,6 +13,7 @@ const Landing = () => {
       <Header />
       <Main />
       <About />
+      <Education />
     </div>
   );
 };
