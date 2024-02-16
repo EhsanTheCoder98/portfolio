@@ -143,6 +143,107 @@ body .main .icons .github {
 body .main .icons .github:hover {
   color: #00abf0;
 }
+body .aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #112e42;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  animation: load 2s ease;
+}
+body .aboutContainer .head {
+  margin: 50px 0 60px 0;
+}
+body .aboutContainer .head h1 {
+  font-size: 4rem;
+  color: #ededed;
+}
+body .aboutContainer .head h1 span {
+  color: #00abf0;
+}
+body .aboutContainer .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+body .aboutContainer .image .blueCircle {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background-color: #00abf0;
+  border-radius: 50%;
+  -webkit-clip-path: circle(50% at 0 0);
+          clip-path: circle(50% at 0 0);
+  animation: rotation 4s linear infinite;
+}
+body .aboutContainer .image .whiteCircle {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background-color: #ededed;
+  border-radius: 50%;
+  -webkit-clip-path: circle(50% at 0 0);
+          clip-path: circle(50% at 0 0);
+  animation: rotationY 4s linear infinite;
+}
+body .aboutContainer .image img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+body .aboutContainer .paragraph {
+  width: 50%;
+  text-align: center;
+  margin: 70px 0 20px 0;
+}
+body .aboutContainer .paragraph p {
+  font-size: 1.5rem;
+}
+body .aboutContainer .buttonContainer {
+  margin: 30px;
+}
+body .aboutContainer .buttonContainer button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  padding: 15px;
+  width: 25rem;
+  font-weight: 500;
+  border: 1px solid #00abf0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  background-color: #00abf0;
+  color: #ededed;
+  z-index: 1;
+  overflow: hidden;
+}
+body .aboutContainer .buttonContainer button:nth-child(2) {
+  background-color: transparent;
+}
+body .aboutContainer .buttonContainer button:nth-child(2):hover::before {
+  background-color: #00abf0;
+}
+body .aboutContainer .buttonContainer button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  transition: all 0.3s;
+  z-index: -1;
+}
+body .aboutContainer .buttonContainer button:hover::before {
+  width: 100%;
+}
 
 @keyframes animated {
   0% {
@@ -153,6 +254,33 @@ body .main .icons .github:hover {
   }
   100% {
     color: #ededed;
+  }
+}
+@keyframes animatedBg {
+  0% {
+    background-color: #ededed;
+  }
+  50% {
+    background-color: #00abf0;
+  }
+  100% {
+    background-color: #ededed;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationY {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 @keyframes load {

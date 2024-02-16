@@ -68,10 +68,10 @@ body {
     min-height: 100vh;
     background-size: contain;
     animation: load 2s ease;
-    .intro{
-        h1 {
-          font-size: 3.5rem;
-        }
+    .intro {
+      h1 {
+        font-size: 3.5rem;
+      }
     }
     .role {
       h1 {
@@ -90,61 +90,86 @@ body {
     .buttonContainer {
       display: flex;
       justify-content: left;
-      button {
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 10px;
-        padding: 15px;
-        width: 25rem;
-        font-weight: 500;
-        border: 1px solid $main-color;
-        border-radius: 10px;
+      @import "./button";
+    }
+    .icons {
+      height: fit-content;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 20px 60px 90px;
+      .github {
+        scale: 4;
         cursor: pointer;
-        transition: all 0.1s ease-out;
-        background-color: $main-color;
-        color: $text-color;
-        z-index: 1;
-        overflow: hidden;
-        &:nth-child(2){
-            background-color: transparent;
-            &:hover::before{
-               background-color: $main-color; 
-            }
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: $bg-color;
-            transition: all .3s;
-            z-index: -1;
-        }
-        &:hover::before{
-            width: 100%;
+        transition: 0.2s;
+        margin: 0 70px 0 0;
+        &:hover {
+          color: $main-color;
         }
       }
     }
-    .icons {
-        height: fit-content;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 60px 20px 60px 90px;
-        .github{
-            scale: 4;
-            cursor: pointer;
-            transition: .2s;
-            margin: 0 70px 0 0;
-            &:hover{
-                color: $main-color;
-            }
+  }
+  .aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $second-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: load 2s ease;
+    .head {
+      margin: 50px 0 60px 0;
+      h1 {
+        font-size: 4rem;
+        color: $text-color;
+        span {
+          color: $main-color;
         }
+      }
+    }
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px;
+      .blueCircle {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background-color: $main-color;
+        border-radius: 50%;
+        clip-path: circle(50% at 0 0);
+        animation: rotation 4s linear  infinite;
+      }
+      .whiteCircle {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background-color: $text-color;
+        border-radius: 50%;
+        clip-path: circle(50% at 0 0 );
+        animation: rotationY 4s linear infinite;
+      }
+      img {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+    }
+    .paragraph {
+      width: 50%;
+      text-align: center;
+      margin: 70px 0 20px 0;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .buttonContainer {
+      @import "./button";
+      margin: 30px;
     }
   }
 }
@@ -160,24 +185,52 @@ body {
     color: $text-color;
   }
 }
+@keyframes animatedBg {
+  0% {
+    background-color: $text-color;
+  }
+  50% {
+    background-color: $main-color;
+  }
+  100% {
+    background-color: $text-color;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationY {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
 
 @keyframes load {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 @keyframes loadLeft {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
