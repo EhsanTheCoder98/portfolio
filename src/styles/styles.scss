@@ -118,7 +118,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    animation: loadLeft 2s ease;
+    animation: fade 2s ease;
     .head {
       margin: 50px 0 60px 0;
       h1 {
@@ -141,7 +141,7 @@ body {
         background-color: $main-color;
         border-radius: 50%;
         clip-path: circle(50% at 0 0);
-        animation: rotation 4s linear  infinite;
+        animation: rotation 4s linear infinite;
       }
       .whiteCircle {
         position: absolute;
@@ -149,7 +149,7 @@ body {
         height: 260px;
         background-color: $text-color;
         border-radius: 50%;
-        clip-path: circle(50% at 0 0 );
+        clip-path: circle(50% at 0 0);
         animation: rotationY 4s linear infinite;
       }
       img {
@@ -172,10 +172,60 @@ body {
       margin: 30px;
     }
   }
-  .educationContainer{
+  .educationContainer {
     height: 100vh;
     width: 100%;
     background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin: 50px;
+      font-size: 4rem;
+      color: $text-color;
+      animation: fade 2s;
+      span {
+        color: $main-color;
+      }
+    }
+    .eachJourneyDiv {
+      border-left: 2px solid $text-color;
+      border-radius: 10px;
+      width: 50%;
+      height: 80%;
+      margin: 30px auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fade 2s;
+      div {
+        position: relative;
+        width: 80%;
+        height: 30%;
+        border: 3px solid $main-color;
+        border-radius: 10px;
+        margin: 10px 20px;
+        animation: loadLeft 2s ;
+        .header {
+          display: flex;
+          justify-content: flex-start;
+          border: none;
+          .icon {
+            color: $main-color;
+            width: 15px;
+            height: 15px;
+            margin: 0 10px 0 0;
+          }
+        }
+        p{
+          font-size: 1.5rem;
+          color: $text-color;
+        }
+      }
+    }
   }
 }
 
@@ -206,7 +256,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -214,7 +264,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(-360deg);
   }
 }
@@ -236,6 +286,14 @@ body {
   }
   100% {
     transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100%{
     opacity: 1;
   }
 }
