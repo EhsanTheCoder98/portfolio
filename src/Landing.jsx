@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import About from "./components/About";
 import Education from "./components/Education";
+import Skills from "./components/Skills";
 
 const Landing = () => {
   return (
@@ -14,6 +15,7 @@ const Landing = () => {
       <Main />
       <About />
       <Education />
+      <Skills />
     </div>
   );
 };
