@@ -11,6 +11,12 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 
 const Landing = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="body">
       <Header />
@@ -20,7 +26,7 @@ const Landing = () => {
       <Skills />
       <Footer />
       <div className="flashUp">
-        <FaAngleDoubleUp className="pointer" />
+        <FaAngleDoubleUp className="pointer" onClick={scrollToTop} />
       </div>
     </div>
   );
