@@ -2,9 +2,7 @@ import React from "react";
 
 // Icons
 import { FiGithub } from "react-icons/fi";
-import { TfiTwitter } from "react-icons/tfi";
 import { FiLinkedin } from "react-icons/fi";
-import { LuInstagram } from "react-icons/lu";
 import { LiaTelegram } from "react-icons/lia";
 
 const Main = () => {
@@ -33,9 +31,7 @@ const Main = () => {
           </div>
           <div className="icons">
             <FiGithub className="github" />
-            <TfiTwitter className="github" />
             <FiLinkedin className="github" />
-            <LuInstagram className="github" />
             <LiaTelegram className="github" />
           </div>
         </section>

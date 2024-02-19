@@ -24,10 +24,9 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: $bg-color;
   color: $text-color;
-  height: 150vh;
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -236,13 +235,15 @@ body {
     justify-content: center;
     align-items: center;
     h1 {
-      margin: 50px;
+      margin-top: 50px;
       font-size: 4rem;
       color: $text-color;
       animation: fade 2s;
     }
     .container {
       display: flex;
+      justify-content: center;
+      align-items: center;
       width: 80%;
       height: 80%;
       div{
@@ -255,6 +256,7 @@ body {
         animation: fade 2s;
         h1{
           font-size: 2rem;
+          margin: 50px;
           animation: loadLeft 2s;
         }
       }
@@ -269,6 +271,34 @@ body {
           font-size: 1.6rem;
           animation: loadLeft 2s;
         }
+      }
+    }
+  }
+  .footerContainer {
+    width: 100%;
+    height: 70px;
+    margin-top: -40px;
+    border-radius: 40px 40px 0 0;
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      color: $main-color;
+    }
+  }
+  .flashUp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: fit-content;
+    height: fit-content;
+    .pointer{
+      scale: 4;
+      animation: upDown 1s infinite;
+      color: $text-color;
+      &:hover{
+       cursor: pointer;
       }
     }
   }
@@ -340,5 +370,16 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes upDown {
+  0%{
+    transform: translateY(-2px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-2px);
   }
 }
