@@ -6,6 +6,14 @@ import { FiLinkedin } from "react-icons/fi";
 import { LiaTelegram } from "react-icons/lia";
 
 const Main = () => {
+  const letsTalkHandler = (e) => {
+    e.preventDefault();
+    window.location.href="https://Wa.me/+989393502621";
+  }
+  const emailHandler = (e) => {
+    e.preventDefault();
+    window.location.href="mailto:ehsanfathalipour110@gmail.com";
+  }
   return (
     <div>
         <section className="main">
@@ -26,8 +34,8 @@ const Main = () => {
             assumenda inventore, excepturi, enim modi!
           </p>
           <div className="buttonContainer">
-            <button className="button1">Hire me</button>
-            <button className="button2">Lets Talk</button>
+            <button className="button1" onClick={emailHandler}>Hire me</button>
+            <button className="button2" onClick={letsTalkHandler}>Lets Talk</button>
           </div>
           <div className="icons">
             <FiGithub className="github" />

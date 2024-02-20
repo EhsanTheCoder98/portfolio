@@ -25,10 +25,10 @@ const Landing = () => {
             <h1>Ehsan.</h1>
           </div>
           <div className="links">
-            <Link to="main" spy={true} smooth={true} duration={100} offset={-70}>Home</Link>
-            <Link to="aboutContainer" spy={true} smooth={true} duration={100} offset={-40}>About</Link>
-            <Link to="educationContainer" spy={true} smooth={true} duration={100} offset={-40}>Education</Link>
-            <Link to="skills" spy={true} smooth={true} duration={100} offset={-250}>Skills</Link>
+            <Link className="eachlink" to="main" spy={true} smooth={true} duration={100} offset={-70}>Home</Link>
+            <Link className="eachlink" to="aboutContainer" spy={true} smooth={true} duration={100} offset={-40}>About</Link>
+            <Link className="eachlink" to="educationContainer" spy={true} smooth={true} duration={100} offset={-40}>Education</Link>
+            <Link className="eachlink" to="skills" spy={true} smooth={true} duration={100} offset={-250}>Skills</Link>
           </div>
         </nav>
       <Main id="main" />

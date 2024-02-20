@@ -46,15 +46,16 @@ body {
     }
     .links {
       margin: 10px;
-    }
-    .links a {
-      color: $text-color;
-      margin: 0 20px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      transition: all 0.1s ease-out;
-      &:hover {
-        color: $main-color;
+      .eachlink {
+        color: $text-color;
+        margin: 0 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: all 0.1s ease-out;
+        &:hover {
+          color: $main-color;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -246,27 +247,27 @@ body {
       align-items: center;
       width: 80%;
       height: 80%;
-      div{
+      div {
         width: 60%;
         height: 60%;
         margin: 0 10px;
         border: 3px solid $main-color;
         border-radius: 10px;
-        transition: all .2s ;
+        transition: all 0.2s;
         animation: fade 2s;
-        h1{
+        h1 {
           font-size: 2rem;
           margin: 50px;
           animation: loadLeft 2s;
         }
       }
-      .spanContainer{
+      .spanContainer {
         border: none;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: 40px;
-        span{
+        span {
           padding: 10px;
           font-size: 1.6rem;
           animation: loadLeft 2s;
@@ -283,7 +284,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    span{
+    span {
       color: $main-color;
     }
   }
@@ -293,12 +294,12 @@ body {
     right: 40px;
     width: fit-content;
     height: fit-content;
-    .pointer{
+    .pointer {
       scale: 4;
       animation: upDown 1s infinite;
       color: $text-color;
-      &:hover{
-       cursor: pointer;
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -373,13 +374,13 @@ body {
   }
 }
 @keyframes upDown {
-  0%{
+  0% {
     transform: translateY(-2px);
   }
-  50%{
+  50% {
     transform: translateY(0);
   }
-  100%{
+  100% {
     transform: translateY(-2px);
   }
 }

@@ -47,15 +47,16 @@ body .navbar h1 {
 body .navbar .links {
   margin: 10px;
 }
-body .navbar .links a {
+body .navbar .links .eachlink {
   color: #ededed;
   margin: 0 20px;
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.1s ease-out;
 }
-body .navbar .links a:hover {
+body .navbar .links .eachlink:hover {
   color: #00abf0;
+  cursor: pointer;
 }
 body .main {
   display: flex;
