@@ -1,9 +1,10 @@
 import React from "react";
 
+
 // Icons
 import { FiGithub } from "react-icons/fi";
-import { FiLinkedin } from "react-icons/fi";
-import { LiaTelegram } from "react-icons/lia";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Main = () => {
   const letsTalkHandler = (e) => {
@@ -34,14 +35,12 @@ const Main = () => {
         </p>
         <div className="buttonContainer">
           <button className="button1" onClick={emailHandler}>
-            Hire me
+            Hire me <MdOutlineEmail className="github"/>
           </button>
           <button className="button2" onClick={letsTalkHandler}>
-            Lets Talk
+            Lets Talk <FaWhatsapp className="github"/>
           </button>
-        </div>
-        <div className="icons">
-          <FiGithub className="github" onClick={gitHandler} />
+          <button onClick={gitHandler}>Check my Github<FiGithub className="github" /></button>
         </div>
       </section>
     </div>

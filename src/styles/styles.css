@@ -11,6 +11,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -139,23 +140,16 @@ body {
 .main .buttonContainer button:hover::before {
   width: 100%;
 }
-.main .icons {
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 60px 20px 60px 90px;
+.main .buttonContainer button {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 22px;
 }
-.main .icons .github {
-  scale: 4;
+.main .github {
+  scale: 3;
+  margin: 0 20px;
   cursor: pointer;
   transition: 0.2s;
-  margin: 0 70px 0 0;
-}
-.main .icons .github:hover {
-  color: #00abf0;
 }
 
 .aboutContainer {
