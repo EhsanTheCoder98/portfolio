@@ -13,7 +13,7 @@ const Main = () => {
   };
   const emailHandler = (e) => {
     e.preventDefault();
-    window.location.href = "mailto:ehsanfathalipour110@gmail.com";
+    window.location.href = "mailto:www.ehsanfathalipour110@gmail.com";
   };
   const gitHandler = (e) => {
     e.preventDefault();

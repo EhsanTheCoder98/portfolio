@@ -143,10 +143,10 @@ body {
 .main .buttonContainer button {
   font-weight: 700;
   font-size: 1.5rem;
-  padding: 22px;
+  padding: 15px;
 }
 .main .github {
-  scale: 3;
+  scale: 2;
   margin: 0 20px;
   cursor: pointer;
   transition: 0.2s;
