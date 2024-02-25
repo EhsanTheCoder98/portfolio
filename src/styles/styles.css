@@ -165,6 +165,7 @@ body .aboutContainer .head h1 span {
 }
 body .aboutContainer .image {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   margin: 100px;
