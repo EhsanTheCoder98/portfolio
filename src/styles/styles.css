@@ -571,4 +571,99 @@ body {
   .footerContainer h1 {
     font-size: 1.5rem;
   }
+}
+@media (max-width: 768px) {
+  .navbar h1 {
+    margin: -2px -30px;
+  }
+  .navbar .links {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .main {
+    margin: 70px auto;
+    text-align: center;
+  }
+  .main .intro h1 {
+    font-size: 2rem;
+  }
+  .main .role h1 {
+    font-size: 1.8rem;
+  }
+  .main p {
+    width: 80%;
+  }
+  .main .buttonContainer {
+    flex-direction: column;
+  }
+  .main .buttonContainer button {
+    margin: 10px auto;
+  }
+  .aboutContainer .image {
+    margin: 45px auto;
+  }
+  .aboutContainer .image img {
+    width: 150px;
+    height: 150px;
+  }
+  .aboutContainer .image .blueCircle,
+  .aboutContainer .image .whiteCircle {
+    width: 160px;
+    height: 160px;
+  }
+  .aboutContainer .paragraph {
+    width: 90%;
+    margin: 45px auto;
+  }
+  .aboutContainer .buttonContainer {
+    margin: 50px auto;
+    margin-top: 0;
+  }
+  .educationContainer {
+    margin: 30px auto;
+    margin-top: 0;
+  }
+  .educationContainer .eachJourneyDiv {
+    width: 90%;
+  }
+  .educationContainer .eachJourneyDiv div p {
+    font-size: 1rem;
+  }
+  .skillsContainer {
+    margin-bottom: 40px;
+  }
+  .skillsContainer .container {
+    flex-direction: column;
+  }
+  .skillsContainer .container div {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+  .skillsContainer .container div h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .skillsContainer .container div .spanContainer {
+    width: 100%;
+    text-align: center;
+    margin: -10px auto;
+  }
+  .skillsContainer .container div .spanContainer span {
+    font-size: 1rem;
+  }
+  .skillsContainer .container div .spanContainer span:last-child {
+    margin-bottom: 40px;
+  }
+  .footerContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .footerContainer h1 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
