@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/styles.css";
 import { FaAngleDoubleUp } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-scroll';
 
 // components
@@ -29,6 +30,9 @@ const Landing = () => {
             <Link className="eachlink" to="aboutContainer" spy={true} smooth={true} duration={100} offset={-40}>About</Link>
             <Link className="eachlink" to="educationContainer" spy={true} smooth={true} duration={100} offset={-40}>Education</Link>
             <Link className="eachlink" to="skills" spy={true} smooth={true} duration={100} offset={-250}>Skills</Link>
+          </div>
+          <div className="hamburger">
+              <GiHamburgerMenu className="hamIcon" />
           </div>
         </nav>
       <Main id="main" />

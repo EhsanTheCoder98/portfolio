@@ -25,6 +25,9 @@ body {
   background-color: $bg-color;
   color: $text-color;
 }
+.body {
+  overflow-x: hidden;
+}
 @import "./navbar";
 @import "./main";
 @import "./about";
@@ -47,3 +50,5 @@ body {
   }
 }
 @import "./animations";
+@import "./phoneResponsive";
+

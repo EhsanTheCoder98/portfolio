@@ -1,0 +1,106 @@
+@media (max-width: 320px) {
+    .navbar {
+      h1 {
+        margin: -2px -30px;
+      }
+      .links {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+  
+    .main {
+      margin: 70px auto;
+      text-align: center;
+      .intro {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .role {
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+      p {
+        width: 80%;
+      }
+      .buttonContainer {
+        flex-direction: column;
+        button {
+          margin: 10px auto;
+        }
+      }
+    }
+    .aboutContainer {
+      .image {
+        margin: 45px auto;
+        img {
+          width: 150px;
+          height: 150px;
+        }
+        .blueCircle,
+        .whiteCircle {
+          width: 160px;
+          height: 160px;
+        }
+      }
+      .paragraph {
+        width: 90%;
+        margin: 45px auto;
+      }
+      .buttonContainer {
+        margin: 50px auto;
+        margin-top: 0;
+      }
+    }
+    .educationContainer {
+      margin: 30px auto;
+      margin-top: 0;
+      .eachJourneyDiv {
+        width: 90%;
+        div {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .skillsContainer{
+      margin-bottom: 40px;
+      .container{
+        flex-direction: column;
+        div{
+          width: 90%;
+          height: auto;
+          margin: 10px auto;
+          h1{
+            font-size: 1.5rem;
+            width: 100%;
+            text-align: center;
+            margin: 30px auto;
+          }
+          .spanContainer{
+            width: 100%;
+            text-align: center;
+            margin: -10px auto;
+            span{
+              font-size: 1rem;
+              &:last-child{
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerContainer{
+      justify-content: center;
+      align-items: center;
+      h1{
+        font-size: 1.5rem;
+      }
+    }
+  }
