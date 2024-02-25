@@ -24,7 +24,8 @@ body {
   background-color: #081b29;
   color: #ededed;
 }
-body .navbar {
+
+.navbar {
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
@@ -41,24 +42,25 @@ body .navbar {
           backdrop-filter: blur(4px);
   animation: loadLeft 1.5s ease;
 }
-body .navbar h1 {
+.navbar h1 {
   font-size: 2.2rem;
 }
-body .navbar .links {
+.navbar .links {
   margin: 10px;
 }
-body .navbar .links .eachlink {
+.navbar .links .eachlink {
   color: #ededed;
   margin: 0 20px;
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.1s ease-out;
 }
-body .navbar .links .eachlink:hover {
+.navbar .links .eachlink:hover {
   color: #00abf0;
   cursor: pointer;
 }
-body .main {
+
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,26 +70,26 @@ body .main {
   background-size: contain;
   animation: load 2s ease;
 }
-body .main .intro h1 {
+.main .intro h1 {
   font-size: 3.5rem;
 }
-body .main .role h1 {
+.main .role h1 {
   color: #00abf0;
   font-size: 3rem;
   animation: animated 5s ease infinite;
 }
-body .main p {
+.main p {
   text-align: center;
   width: 45%;
   margin: 50px 0;
   font-size: 1.5rem;
   font-weight: 500;
 }
-body .main .buttonContainer {
+.main .buttonContainer {
   display: flex;
   justify-content: left;
 }
-body .main .buttonContainer button {
+.main .buttonContainer button {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -105,13 +107,13 @@ body .main .buttonContainer button {
   z-index: 1;
   overflow: hidden;
 }
-body .main .buttonContainer button:nth-child(2) {
+.main .buttonContainer button:nth-child(2) {
   background-color: transparent;
 }
-body .main .buttonContainer button:nth-child(2):hover::before {
+.main .buttonContainer button:nth-child(2):hover::before {
   background-color: #00abf0;
 }
-body .main .buttonContainer button::before {
+.main .buttonContainer button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -122,10 +124,10 @@ body .main .buttonContainer button::before {
   transition: all 0.3s;
   z-index: -1;
 }
-body .main .buttonContainer button:hover::before {
+.main .buttonContainer button:hover::before {
   width: 100%;
 }
-body .main .icons {
+.main .icons {
   height: -moz-fit-content;
   height: fit-content;
   width: 100vw;
@@ -134,16 +136,17 @@ body .main .icons {
   align-items: center;
   margin: 60px 20px 60px 90px;
 }
-body .main .icons .github {
+.main .icons .github {
   scale: 4;
   cursor: pointer;
   transition: 0.2s;
   margin: 0 70px 0 0;
 }
-body .main .icons .github:hover {
+.main .icons .github:hover {
   color: #00abf0;
 }
-body .aboutContainer {
+
+.aboutContainer {
   width: 100%;
   min-height: 100vh;
   background-color: #112e42;
@@ -153,24 +156,24 @@ body .aboutContainer {
   align-items: center;
   animation: fade 2s ease;
 }
-body .aboutContainer .head {
+.aboutContainer .head {
   margin: 50px 0 60px 0;
 }
-body .aboutContainer .head h1 {
+.aboutContainer .head h1 {
   font-size: 4rem;
   color: #ededed;
 }
-body .aboutContainer .head h1 span {
+.aboutContainer .head h1 span {
   color: #00abf0;
 }
-body .aboutContainer .image {
+.aboutContainer .image {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   margin: 100px;
 }
-body .aboutContainer .image .blueCircle {
+.aboutContainer .image .blueCircle {
   position: absolute;
   width: 260px;
   height: 260px;
@@ -180,7 +183,7 @@ body .aboutContainer .image .blueCircle {
           clip-path: circle(50% at 0 0);
   animation: rotation 4s linear infinite;
 }
-body .aboutContainer .image .whiteCircle {
+.aboutContainer .image .whiteCircle {
   position: absolute;
   width: 260px;
   height: 260px;
@@ -190,24 +193,24 @@ body .aboutContainer .image .whiteCircle {
           clip-path: circle(50% at 0 0);
   animation: rotationY 4s linear infinite;
 }
-body .aboutContainer .image img {
+.aboutContainer .image img {
   position: absolute;
   width: 250px;
   height: 250px;
   border-radius: 50%;
 }
-body .aboutContainer .paragraph {
+.aboutContainer .paragraph {
   width: 50%;
   text-align: center;
   margin: 70px 0 20px 0;
 }
-body .aboutContainer .paragraph p {
+.aboutContainer .paragraph p {
   font-size: 1.5rem;
 }
-body .aboutContainer .buttonContainer {
+.aboutContainer .buttonContainer {
   margin: 30px;
 }
-body .aboutContainer .buttonContainer button {
+.aboutContainer .buttonContainer button {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -225,13 +228,13 @@ body .aboutContainer .buttonContainer button {
   z-index: 1;
   overflow: hidden;
 }
-body .aboutContainer .buttonContainer button:nth-child(2) {
+.aboutContainer .buttonContainer button:nth-child(2) {
   background-color: transparent;
 }
-body .aboutContainer .buttonContainer button:nth-child(2):hover::before {
+.aboutContainer .buttonContainer button:nth-child(2):hover::before {
   background-color: #00abf0;
 }
-body .aboutContainer .buttonContainer button::before {
+.aboutContainer .buttonContainer button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -242,10 +245,11 @@ body .aboutContainer .buttonContainer button::before {
   transition: all 0.3s;
   z-index: -1;
 }
-body .aboutContainer .buttonContainer button:hover::before {
+.aboutContainer .buttonContainer button:hover::before {
   width: 100%;
 }
-body .educationContainer {
+
+.educationContainer {
   height: 100vh;
   width: 100%;
   background-color: #081b29;
@@ -254,16 +258,16 @@ body .educationContainer {
   justify-content: center;
   align-items: center;
 }
-body .educationContainer h1 {
+.educationContainer h1 {
   margin: 50px;
   font-size: 4rem;
   color: #ededed;
   animation: fade 2s;
 }
-body .educationContainer h1 span {
+.educationContainer h1 span {
   color: #00abf0;
 }
-body .educationContainer .eachJourneyDiv {
+.educationContainer .eachJourneyDiv {
   border-left: 2px solid #ededed;
   border-radius: 10px;
   width: 50%;
@@ -276,7 +280,7 @@ body .educationContainer .eachJourneyDiv {
   align-items: center;
   animation: fade 2s;
 }
-body .educationContainer .eachJourneyDiv div {
+.educationContainer .eachJourneyDiv div {
   position: relative;
   width: 80%;
   height: 30%;
@@ -285,22 +289,23 @@ body .educationContainer .eachJourneyDiv div {
   margin: 10px 20px;
   animation: loadLeft 2s;
 }
-body .educationContainer .eachJourneyDiv div .header {
+.educationContainer .eachJourneyDiv div .header {
   display: flex;
   justify-content: flex-start;
   border: none;
 }
-body .educationContainer .eachJourneyDiv div .header .icon {
+.educationContainer .eachJourneyDiv div .header .icon {
   color: #00abf0;
   width: 15px;
   height: 15px;
   margin: 0 10px 0 0;
 }
-body .educationContainer .eachJourneyDiv div p {
+.educationContainer .eachJourneyDiv div p {
   font-size: 1.5rem;
   color: #ededed;
 }
-body .skillsContainer {
+
+.skillsContainer {
   width: 100%;
   height: 100vh;
   background-color: #112e42;
@@ -309,20 +314,20 @@ body .skillsContainer {
   justify-content: center;
   align-items: center;
 }
-body .skillsContainer h1 {
+.skillsContainer h1 {
   margin-top: 50px;
   font-size: 4rem;
   color: #ededed;
   animation: fade 2s;
 }
-body .skillsContainer .container {
+.skillsContainer .container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
   height: 80%;
 }
-body .skillsContainer .container div {
+.skillsContainer .container div {
   width: 60%;
   height: 60%;
   margin: 0 10px;
@@ -331,24 +336,25 @@ body .skillsContainer .container div {
   transition: all 0.2s;
   animation: fade 2s;
 }
-body .skillsContainer .container div h1 {
+.skillsContainer .container div h1 {
   font-size: 2rem;
   margin: 50px;
   animation: loadLeft 2s;
 }
-body .skillsContainer .container .spanContainer {
+.skillsContainer .container .spanContainer {
   border: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 40px;
 }
-body .skillsContainer .container .spanContainer span {
+.skillsContainer .container .spanContainer span {
   padding: 10px;
   font-size: 1.6rem;
   animation: loadLeft 2s;
 }
-body .footerContainer {
+
+.footerContainer {
   width: 100%;
   height: 70px;
   margin-top: -40px;
@@ -358,10 +364,11 @@ body .footerContainer {
   justify-content: center;
   align-items: center;
 }
-body .footerContainer span {
+.footerContainer span {
   color: #00abf0;
 }
-body .flashUp {
+
+.flashUp {
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -370,12 +377,12 @@ body .flashUp {
   height: -moz-fit-content;
   height: fit-content;
 }
-body .flashUp .pointer {
+.flashUp .pointer {
   scale: 4;
   animation: upDown 1s infinite;
   color: #ededed;
 }
-body .flashUp .pointer:hover {
+.flashUp .pointer:hover {
   cursor: pointer;
 }
 

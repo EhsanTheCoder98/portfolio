@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 60px;
+    min-height: 100vh;
+    background-size: contain;
+    animation: load 2s ease;
+    .intro {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+    .role {
+      h1 {
+        color: $main-color;
+        font-size: 3rem;
+        animation: animated 5s ease infinite;
+      }
+    }
+    p {
+      text-align: center;
+      width: 45%;
+      margin: 50px 0;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .buttonContainer {
+      display: flex;
+      justify-content: left;
+      @import "./button";
+    }
+    .icons {
+      height: fit-content;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 20px 60px 90px;
+      .github {
+        scale: 4;
+        cursor: pointer;
+        transition: 0.2s;
+        margin: 0 70px 0 0;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }

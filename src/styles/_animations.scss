@@ -1,0 +1,79 @@
+@keyframes animated {
+    0% {
+      color: $text-color;
+    }
+    50% {
+      color: $main-color;
+    }
+    100% {
+      color: $text-color;
+    }
+  }
+  @keyframes animatedBg {
+    0% {
+      background-color: $text-color;
+    }
+    50% {
+      background-color: $main-color;
+    }
+    100% {
+      background-color: $text-color;
+    }
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotationY {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes load {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes loadLeft {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes upDown {
+    0% {
+      transform: translateY(-2px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+  }

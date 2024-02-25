@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    margin-top: 0;
+    padding: 15px 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: fit-content;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    animation: loadLeft 1.5s ease;
+    h1 {
+      font-size: 2.2rem;
+    }
+    .links {
+      margin: 10px;
+      .eachlink {
+        color: $text-color;
+        margin: 0 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: all 0.1s ease-out;
+        &:hover {
+          color: $main-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }

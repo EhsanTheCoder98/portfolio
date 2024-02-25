@@ -1,0 +1,63 @@
+.aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $second-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: fade 2s ease;
+    .head {
+      margin: 50px 0 60px 0;
+      h1 {
+        font-size: 4rem;
+        color: $text-color;
+        span {
+          color: $main-color;
+        }
+      }
+    }
+    .image {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 100px;
+      .blueCircle {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background-color: $main-color;
+        border-radius: 50%;
+        clip-path: circle(50% at 0 0);
+        animation: rotation 4s linear infinite;
+      }
+      .whiteCircle {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background-color: $text-color;
+        border-radius: 50%;
+        clip-path: circle(50% at 0 0);
+        animation: rotationY 4s linear infinite;
+      }
+      img {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+    }
+    .paragraph {
+      width: 50%;
+      text-align: center;
+      margin: 70px 0 20px 0;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .buttonContainer {
+      @import "./button";
+      margin: 30px;
+    }
+  }
