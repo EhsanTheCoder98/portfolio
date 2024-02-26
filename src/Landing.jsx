@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/styles.css";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from 'react-scroll';
+import { MdOutlineClose } from "react-icons/md";
+import { Link } from "react-scroll";
 
 // components
 import Main from "./components/Main";
@@ -18,23 +19,68 @@ const Landing = () => {
       behavior: "smooth",
     });
   };
-  
+  const [ham, setHam] = useState(false);
+
   return (
     <div className="body">
-        <nav className="navbar">
-          <div>
-            <h1>Ehsan.</h1>
-          </div>
-          <div className="links">
-            <Link className="eachlink" to="main" spy={true} smooth={true} duration={100} offset={-70}>Home</Link>
-            <Link className="eachlink" to="aboutContainer" spy={true} smooth={true} duration={100} offset={-40}>About</Link>
-            <Link className="eachlink" to="educationContainer" spy={true} smooth={true} duration={100} offset={-40}>Education</Link>
-            <Link className="eachlink" to="skills" spy={true} smooth={true} duration={100} offset={-250}>Skills</Link>
-          </div>
-          <div className="hamburger">
-              <GiHamburgerMenu className="hamIcon" />
-          </div>
-        </nav>
+      <nav className="navbar">
+        <div>
+          <h1>Ehsan.</h1>
+        </div>
+        <div className="links">
+          <Link
+            className="eachlink"
+            to="main"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-70}
+          >
+            Home
+          </Link>
+          <Link
+            className="eachlink"
+            to="aboutContainer"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-40}
+          >
+            About
+          </Link>
+          <Link
+            className="eachlink"
+            to="educationContainer"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-40}
+          >
+            Education
+          </Link>
+          <Link
+            className="eachlink"
+            to="skills"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-250}
+          >
+            Skills
+          </Link>
+        </div>
+        <div className="hamburger">
+          {!ham && <GiHamburgerMenu className="hamIcon" onClick={() => setHam(!ham)} />}
+          {ham && (
+            <div className="dropDown">
+              <MdOutlineClose className="close" onClick={() => setHam(!ham)} />
+              <div>
+                
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
       <Main id="main" />
       <About id="aboutContainer" />
       <Education id="educationContainer" />

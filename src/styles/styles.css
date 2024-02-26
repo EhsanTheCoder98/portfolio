@@ -51,12 +51,55 @@ body {
   font-size: 2.2rem;
 }
 .navbar .hamburger {
+  position: relative;
   display: none;
   margin: 0 -20px;
+  transition: all 1s ease;
 }
 .navbar .hamburger .hamIcon {
   width: 25px;
   height: 25px;
+}
+.navbar .hamburger .hamIcon:hover {
+  cursor: pointer;
+}
+.navbar .hamburger .dropDown {
+  z-index: 500;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #00abf0;
+  border-radius: 10px 0 10px 10px;
+  background-color: #112e42;
+  animation: load 0.5s ease-in-out;
+  opacity: 0.9;
+}
+.navbar .hamburger .dropDown .close {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  position: absolute;
+  right: 0px;
+}
+.navbar .hamburger .dropDown .close:hover {
+  cursor: pointer;
+}
+.navbar .hamburger .dropDown .links {
+  z-index: 501;
+  margin: 10px;
+}
+.navbar .hamburger .dropDown .links .eachlink {
+  color: #ededed;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.1s ease-out;
+}
+.navbar .hamburger .dropDown .links .eachlink:hover {
+  color: #00abf0;
+  cursor: pointer;
 }
 .navbar .links {
   margin: 10px;
@@ -384,6 +427,7 @@ body {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  z-index: 1000;
 }
 .flashUp .pointer {
   scale: 4;

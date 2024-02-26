@@ -41,6 +41,7 @@ body {
   right: 40px;
   width: fit-content;
   height: fit-content;
+  z-index: 1000;
   .pointer {
     scale: 4;
     animation: upDown 1s infinite;
