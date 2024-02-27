@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./styles/styles.css";
+import { Link } from "react-scroll";
+
+// icons
 import { FaAngleDoubleUp } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
-import { Link } from "react-scroll";
 
 // components
 import Main from "./components/Main";
@@ -64,7 +66,7 @@ const Landing = () => {
             spy={true}
             smooth={true}
             duration={100}
-            offset={-250}
+            offset={-40}
           >
             Skills
           </Link>
@@ -114,7 +116,7 @@ const Landing = () => {
                   spy={true}
                   smooth={true}
                   duration={100}
-                  offset={-250}
+                  offset={-40}
                 >
                   Skills
                 </Link>

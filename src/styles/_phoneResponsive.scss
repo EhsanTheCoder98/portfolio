@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     .navbar {
       h1 {
         margin: -2px -30px;
@@ -72,6 +72,29 @@
       margin-bottom: 40px;
       .container{
         flex-direction: column;
+        .leftContainer{
+          h1{
+            font-size: 2rem;
+            width: 100%;
+
+          }
+          .codingSkills{
+            span{
+              font-size: 1.4rem;
+            }
+          }
+        }
+        .rightContainer{
+          h1{
+            font-size: 2rem;
+            width: 100%;
+          }
+          .softSkills{
+            span{
+              font-size: 1.4rem;
+            }
+          }
+        }
       }
     }
     .footerContainer{

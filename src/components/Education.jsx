@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/styles.css";
+
+// icons
 import { SlCalender } from "react-icons/sl";
 
 const Education = () => {
