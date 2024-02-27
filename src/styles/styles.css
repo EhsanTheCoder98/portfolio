@@ -101,7 +101,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-.navbar .hamburger .dropDown .dropDownLinks a:hover {
+.navbar .hamburger .dropDown .dropDownLinks a:active {
   background-color: #081b29;
 }
 .navbar .hamburger .dropDown .links {
@@ -378,7 +378,7 @@ body {
   background-color: #112e42;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin-bottom: 70px;
   padding-bottom: 20px;
@@ -396,31 +396,47 @@ body {
   width: 80%;
   height: 80%;
 }
-.skillsContainer .container div {
-  width: 60%;
-  height: 60%;
-  margin: 0 10px;
-  border: 3px solid #00abf0;
-  border-radius: 10px;
-  transition: all 0.2s;
-  animation: fade 2s;
+.skillsContainer .container .leftContainer {
+  flex: 1;
+  height: 500px;
+  margin: 0 80px;
+  text-align: center;
 }
-.skillsContainer .container div h1 {
-  font-size: 2rem;
-  margin: 50px;
-  animation: loadLeft 2s;
+.skillsContainer .container .leftContainer h1 {
+  font-size: 3rem;
+  padding: 20px;
 }
-.skillsContainer .container .spanContainer {
-  border: none;
+.skillsContainer .container .leftContainer .codingSkills {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: 40px;
 }
-.skillsContainer .container .spanContainer span {
-  padding: 10px;
-  font-size: 1.6rem;
-  animation: loadLeft 2s;
+.skillsContainer .container .leftContainer .codingSkills span {
+  font-size: 20px;
+  text-align: center;
+  animation: loadLeft 1s ease;
+}
+.skillsContainer .container .rightContainer {
+  flex: 1;
+  height: 500px;
+  margin: 0 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.skillsContainer .container .rightContainer h1 {
+  font-size: 3rem;
+  padding: 20px;
+}
+.skillsContainer .container .rightContainer .softSkills {
+  display: flex;
+  flex-direction: column;
+}
+.skillsContainer .container .rightContainer .softSkills span {
+  font-size: 20px;
+  text-align: center;
+  animation: loadLeft 1s ease;
 }
 
 .footerContainer {
@@ -598,28 +614,6 @@ body {
   .skillsContainer .container {
     flex-direction: column;
   }
-  .skillsContainer .container div {
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-  }
-  .skillsContainer .container div h1 {
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-    margin: 30px auto;
-  }
-  .skillsContainer .container div .spanContainer {
-    width: 100%;
-    text-align: center;
-    margin: -10px auto;
-  }
-  .skillsContainer .container div .spanContainer span {
-    font-size: 1rem;
-  }
-  .skillsContainer .container div .spanContainer span:last-child {
-    margin-bottom: 40px;
-  }
   .footerContainer {
     justify-content: center;
     align-items: center;
@@ -692,28 +686,6 @@ body {
   }
   .skillsContainer .container {
     flex-direction: column;
-  }
-  .skillsContainer .container div {
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-  }
-  .skillsContainer .container div h1 {
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-    margin: 30px auto;
-  }
-  .skillsContainer .container div .spanContainer {
-    width: 100%;
-    text-align: center;
-    margin: -10px auto;
-  }
-  .skillsContainer .container div .spanContainer span {
-    font-size: 1rem;
-  }
-  .skillsContainer .container div .spanContainer span:last-child {
-    margin-bottom: 40px;
   }
   .footerContainer {
     justify-content: center;

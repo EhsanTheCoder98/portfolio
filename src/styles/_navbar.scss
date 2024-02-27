@@ -62,7 +62,7 @@
           height: 35px;
           margin: 0 auto;
           text-align: center;
-          &:hover{
+          &:active{
             background-color: $bg-color;
           }
         }

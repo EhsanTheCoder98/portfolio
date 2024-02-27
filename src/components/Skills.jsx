@@ -6,24 +6,24 @@ const Skills = () => {
     <div className="skillsContainer">
       <h1>Skills!</h1>
       <div className="container">
-        <div className="skills">
+        <div className="leftContainer">
           <h1>Coding Skills</h1>
-          <div className="spanContainer">
-          <span>#HTML/CSS</span>
-          <span>#Javascript</span>
-          <span>#ReactJs</span>
-          <span>#Rest API</span>
-          <span>#GraphQl</span>
-          <span>#Redux</span>
-          <span>#SASS</span>
-          <span>#MaterialUI</span>
-          <span>#Git/Github</span>
-          <span>#NextJs(Learning⏳)</span>
+          <div className="codingSkills">
+            <span>#HTML/CSS</span>
+            <span>#Javascript</span>
+            <span>#ReactJs</span>
+            <span>#Rest API</span>
+            <span>#GraphQl</span>
+            <span>#Redux</span>
+            <span>#SASS</span>
+            <span>#MaterialUI</span>
+            <span>#Git/Github</span>
+            <span>#NextJs(Learning⏳)</span>
           </div>
         </div>
-        <div className="softSkills">
+        <div className="rightContainer">
           <h1>Soft Skills</h1>
-          <div className="spanContainer">
+          <div className="softSkills">
             <span>#English Knowledge</span>
             <span>#Adaptability</span>
             <span>#Attention to detail</span>

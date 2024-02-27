@@ -1,50 +1,66 @@
 .skillsContainer {
-    width: 100%;
-    min-height: 100vh;
-    background-color: $second-bg-color;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $second-bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  h1 {
+    margin-top: 50px;
+    font-size: 4rem;
+    color: $text-color;
+    animation: fade 2s;
+  }
+  .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
-    padding-bottom: 20px;
-    h1 {
-      margin-top: 50px;
-      font-size: 4rem;
-      color: $text-color;
-      animation: fade 2s;
-    }
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-      height: 80%;
-      div {
-        width: 60%;
-        height: 60%;
-        margin: 0 10px;
-        border: 3px solid $main-color;
-        border-radius: 10px;
-        transition: all 0.2s;
-        animation: fade 2s;
-        h1 {
-          font-size: 2rem;
-          margin: 50px;
-          animation: loadLeft 2s;
-        }
+    width: 80%;
+    height: 80%;
+    .leftContainer {
+      flex: 1;
+      height: 500px;
+      margin: 0 80px;
+      text-align: center;
+      h1 {
+        font-size: 3rem;
+        padding: 20px;
       }
-      .spanContainer {
-        border: none;
+      .codingSkills {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        margin: 40px;
         span {
-          padding: 10px;
-          font-size: 1.6rem;
-          animation: loadLeft 2s;
+          font-size: 20px;
+          text-align: center;
+          animation: loadLeft 1s ease;
+        }
+      }
+    }
+    .rightContainer {
+      flex: 1;
+      height: 500px;
+      margin: 0 80px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      h1 {
+        font-size: 3rem;
+        padding: 20px;
+      }
+      .softSkills {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-size: 20px;
+          text-align: center;
+          animation: loadLeft 1s ease;
         }
       }
     }
   }
+}

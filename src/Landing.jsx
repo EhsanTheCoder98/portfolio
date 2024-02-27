@@ -60,7 +60,7 @@ const Landing = () => {
           </Link>
           <Link
             className="eachlink"
-            to="skills"
+            to="skillsContainer"
             spy={true}
             smooth={true}
             duration={100}
@@ -110,7 +110,7 @@ const Landing = () => {
                 </Link>
                 <Link
                   className="eachlink"
-                  to="skills"
+                  to="skillsContainer"
                   spy={true}
                   smooth={true}
                   duration={100}
@@ -126,7 +126,7 @@ const Landing = () => {
       <Main id="main" />
       <About id="aboutContainer" />
       <Education id="educationContainer" />
-      <Skills id="skills" />
+      <Skills id="skillsContainer" />
       <Footer />
       <div className="flashUp">
         <FaAngleDoubleUp className="pointer" onClick={scrollToTop} />
