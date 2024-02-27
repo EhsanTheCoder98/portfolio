@@ -35,6 +35,9 @@
       }
     }
     .projectsContainer {
+      h1{
+        text-align: center;
+      }
       .projects {
         width: 90%;
         div {
@@ -53,6 +56,9 @@
     .educationContainer {
       margin: 30px auto;
       margin-top: 0;
+      h1{
+        text-align: center;
+      }
       .eachJourneyDiv {
         width: 90%;
         div {

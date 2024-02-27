@@ -7,6 +7,13 @@
   justify-content: flex-start;
   align-items: center;
   animation: fade 2s ease;
+  h1{
+    margin-top: 30px;
+    font-size: 4rem;
+    span{
+      color:$main-color;
+    }
+  }
   .projects{
     display: flex;
     flex-direction: column;
