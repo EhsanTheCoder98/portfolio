@@ -34,26 +34,20 @@
         }
       }
     }
-    .aboutContainer {
-      .image {
-        margin: 45px auto;
-        img {
-          width: 150px;
-          height: 150px;
+    .projectsContainer {
+      .projects {
+        width: 98%;
+        div {
+          &:last-child{
+            margin-bottom: 60px;
+          }
+          h1 {
+            font-size: 1.6rem;
+          }
+          p{
+            font-size: 1.1rem;
+          }
         }
-        .blueCircle,
-        .whiteCircle {
-          width: 160px;
-          height: 160px;
-        }
-      }
-      .paragraph {
-        width: 90%;
-        margin: 45px auto;
-      }
-      .buttonContainer {
-        margin: 50px auto;
-        margin-top: 0;
       }
     }
     .educationContainer {

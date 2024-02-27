@@ -1,84 +1,83 @@
 @media (max-width: 768px) {
-    .navbar {
+  .navbar {
+    h1 {
+      margin: -2px -30px;
+    }
+    .links {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+
+  .main {
+    margin: 70px auto;
+    text-align: center;
+    .intro {
       h1 {
-        margin: -2px -30px;
-      }
-      .links {
-        display: none;
-      }
-      .hamburger {
-        display: block;
+        font-size: 2rem;
       }
     }
-  
-    .main {
-      margin: 70px auto;
-      text-align: center;
-      .intro {
-        h1 {
-          font-size: 2rem;
-        }
-      }
-      .role {
-        h1 {
-          font-size: 1.8rem;
-        }
-      }
-      p {
-        width: 80%;
-      }
-      .buttonContainer {
-        flex-direction: column;
-        button {
-          margin: 10px auto;
-        }
+    .role {
+      h1 {
+        font-size: 1.8rem;
       }
     }
-    .aboutContainer {
-      .image {
-        margin: 45px auto;
-        img {
-          width: 150px;
-          height: 150px;
-        }
-        .blueCircle,
-        .whiteCircle {
-          width: 160px;
-          height: 160px;
-        }
-      }
-      .paragraph {
-        width: 90%;
-        margin: 45px auto;
-      }
-      .buttonContainer {
-        margin: 50px auto;
-        margin-top: 0;
-      }
+    p {
+      width: 80%;
     }
-    .educationContainer {
-      margin: 30px auto;
-      margin-top: 0;
-      .eachJourneyDiv {
-        width: 90%;
-        div {
-          p {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-    .skillsContainer{
-      margin-bottom: 40px;
-      .container{
-        flex-direction: column;
-      }
-    }
-    .footerContainer{
-      justify-content: center;
-      align-items: center;
-      h1{
-        font-size: 1.5rem;
+    .buttonContainer {
+      flex-direction: column;
+      button {
+        margin: 10px auto;
       }
     }
   }
+  .projectsContainer {
+    .projects {
+      width: 80%;
+      div {
+        margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 60px;
+        }
+        h1 {
+          font-size: 1.6rem;
+        }
+        p{
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .educationContainer {
+    margin: 30px auto;
+    margin-top: 0;
+    .eachJourneyDiv {
+      width: 90%;
+      div {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .skillsContainer {
+    margin-bottom: 40px;
+    .container {
+      flex-direction: column;
+      margin-top: 20px;
+      .rightContainer {
+        margin-top: 30px;
+      }
+    }
+  }
+  .footerContainer {
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}

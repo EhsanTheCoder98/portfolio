@@ -339,7 +339,7 @@ body {
   padding-bottom: 20px;
 }
 .skillsContainer h1 {
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 4rem;
   color: #ededed;
   animation: fade 2s;
@@ -350,6 +350,7 @@ body {
   align-items: center;
   width: 80%;
   height: 80%;
+  margin-top: 40px;
 }
 .skillsContainer .container .leftContainer {
   flex: 1;
@@ -357,6 +358,9 @@ body {
   height: 500px;
   margin: 0 80px;
   text-align: center;
+  border-left: 2px solid #00abf0;
+  border-right: 2px solid #00abf0;
+  border-radius: 10px;
 }
 .skillsContainer .container .leftContainer h1 {
   font-size: 3rem;
@@ -382,6 +386,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  border-left: 2px solid #00abf0;
+  border-right: 2px solid #00abf0;
+  border-radius: 10px;
 }
 .skillsContainer .container .rightContainer h1 {
   font-size: 3rem;
@@ -508,6 +515,78 @@ body {
     transform: translateY(-2px);
   }
 }
+@media (max-width: 768px) {
+  .navbar h1 {
+    margin: -2px -30px;
+  }
+  .navbar .links {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .main {
+    margin: 70px auto;
+    text-align: center;
+  }
+  .main .intro h1 {
+    font-size: 2rem;
+  }
+  .main .role h1 {
+    font-size: 1.8rem;
+  }
+  .main p {
+    width: 80%;
+  }
+  .main .buttonContainer {
+    flex-direction: column;
+  }
+  .main .buttonContainer button {
+    margin: 10px auto;
+  }
+  .projectsContainer .projects {
+    width: 80%;
+  }
+  .projectsContainer .projects div {
+    margin-bottom: 30px;
+  }
+  .projectsContainer .projects div:last-child {
+    margin-bottom: 60px;
+  }
+  .projectsContainer .projects div h1 {
+    font-size: 1.6rem;
+  }
+  .projectsContainer .projects div p {
+    font-size: 1.1rem;
+  }
+  .educationContainer {
+    margin: 30px auto;
+    margin-top: 0;
+  }
+  .educationContainer .eachJourneyDiv {
+    width: 90%;
+  }
+  .educationContainer .eachJourneyDiv div p {
+    font-size: 1rem;
+  }
+  .skillsContainer {
+    margin-bottom: 40px;
+  }
+  .skillsContainer .container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .skillsContainer .container .rightContainer {
+    margin-top: 30px;
+  }
+  .footerContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .footerContainer h1 {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 425px) {
   .navbar h1 {
     margin: -2px -30px;
@@ -537,25 +616,17 @@ body {
   .main .buttonContainer button {
     margin: 10px auto;
   }
-  .aboutContainer .image {
-    margin: 45px auto;
+  .projectsContainer .projects {
+    width: 98%;
   }
-  .aboutContainer .image img {
-    width: 150px;
-    height: 150px;
+  .projectsContainer .projects div:last-child {
+    margin-bottom: 60px;
   }
-  .aboutContainer .image .blueCircle,
-  .aboutContainer .image .whiteCircle {
-    width: 160px;
-    height: 160px;
+  .projectsContainer .projects div h1 {
+    font-size: 1.6rem;
   }
-  .aboutContainer .paragraph {
-    width: 90%;
-    margin: 45px auto;
-  }
-  .aboutContainer .buttonContainer {
-    margin: 50px auto;
-    margin-top: 0;
+  .projectsContainer .projects div p {
+    font-size: 1.1rem;
   }
   .educationContainer {
     margin: 30px auto;
@@ -586,79 +657,6 @@ body {
   }
   .skillsContainer .container .rightContainer .softSkills span {
     font-size: 1.4rem;
-  }
-  .footerContainer {
-    justify-content: center;
-    align-items: center;
-  }
-  .footerContainer h1 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 768px) {
-  .navbar h1 {
-    margin: -2px -30px;
-  }
-  .navbar .links {
-    display: none;
-  }
-  .navbar .hamburger {
-    display: block;
-  }
-  .main {
-    margin: 70px auto;
-    text-align: center;
-  }
-  .main .intro h1 {
-    font-size: 2rem;
-  }
-  .main .role h1 {
-    font-size: 1.8rem;
-  }
-  .main p {
-    width: 80%;
-  }
-  .main .buttonContainer {
-    flex-direction: column;
-  }
-  .main .buttonContainer button {
-    margin: 10px auto;
-  }
-  .aboutContainer .image {
-    margin: 45px auto;
-  }
-  .aboutContainer .image img {
-    width: 150px;
-    height: 150px;
-  }
-  .aboutContainer .image .blueCircle,
-  .aboutContainer .image .whiteCircle {
-    width: 160px;
-    height: 160px;
-  }
-  .aboutContainer .paragraph {
-    width: 90%;
-    margin: 45px auto;
-  }
-  .aboutContainer .buttonContainer {
-    margin: 50px auto;
-    margin-top: 0;
-  }
-  .educationContainer {
-    margin: 30px auto;
-    margin-top: 0;
-  }
-  .educationContainer .eachJourneyDiv {
-    width: 90%;
-  }
-  .educationContainer .eachJourneyDiv div p {
-    font-size: 1rem;
-  }
-  .skillsContainer {
-    margin-bottom: 40px;
-  }
-  .skillsContainer .container {
-    flex-direction: column;
   }
   .footerContainer {
     justify-content: center;
