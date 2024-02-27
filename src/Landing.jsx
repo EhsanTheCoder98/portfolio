@@ -9,7 +9,7 @@ import { MdOutlineClose } from "react-icons/md";
 
 // components
 import Main from "./components/Main";
-import About from "./components/About";
+import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
@@ -42,13 +42,13 @@ const Landing = () => {
           </Link>
           <Link
             className="eachlink"
-            to="aboutContainer"
+            to="projectsContainer"
             spy={true}
             smooth={true}
             duration={100}
             offset={-40}
           >
-            About
+            Projects
           </Link>
           <Link
             className="eachlink"
@@ -92,13 +92,13 @@ const Landing = () => {
                 </Link>
                 <Link
                   className="eachlink"
-                  to="aboutContainer"
+                  to="projectsContainer"
                   spy={true}
                   smooth={true}
                   duration={100}
                   offset={-40}
                 >
-                  About
+                  Projects
                 </Link>
                 <Link
                   className="eachlink"
@@ -126,7 +126,7 @@ const Landing = () => {
         </div>
       </nav>
       <Main id="main" />
-      <About id="aboutContainer" />
+      <Projects id="projectsContainer" />
       <Education id="educationContainer" />
       <Skills id="skillsContainer" />
       <Footer />
