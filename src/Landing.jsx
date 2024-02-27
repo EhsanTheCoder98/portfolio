@@ -70,12 +70,54 @@ const Landing = () => {
           </Link>
         </div>
         <div className="hamburger">
-          {!ham && <GiHamburgerMenu className="hamIcon" onClick={() => setHam(!ham)} />}
+          {!ham ? (
+            <GiHamburgerMenu className="hamIcon" onClick={() => setHam(!ham)} />
+          ) : (
+            <MdOutlineClose className="hamIcon" onClick={() => setHam(!ham)} />
+          )}
           {ham && (
             <div className="dropDown">
-              <MdOutlineClose className="close" onClick={() => setHam(!ham)} />
-              <div>
-                
+              <div className="dropDownLinks">
+                <Link
+                  className="eachlink"
+                  to="main"
+                  spy={true}
+                  smooth={true}
+                  duration={100}
+                  offset={-70}
+                >
+                  Home
+                </Link>
+                <Link
+                  className="eachlink"
+                  to="aboutContainer"
+                  spy={true}
+                  smooth={true}
+                  duration={100}
+                  offset={-40}
+                >
+                  About
+                </Link>
+                <Link
+                  className="eachlink"
+                  to="educationContainer"
+                  spy={true}
+                  smooth={true}
+                  duration={100}
+                  offset={-40}
+                >
+                  Education
+                </Link>
+                <Link
+                  className="eachlink"
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  duration={100}
+                  offset={-250}
+                >
+                  Skills
+                </Link>
               </div>
             </div>
           )}
