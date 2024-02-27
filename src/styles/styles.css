@@ -228,7 +228,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto 0;
+  margin: 40px auto;
   width: 50%;
   height: 90%;
   border-left: 2px solid #00abf0;
@@ -617,7 +617,7 @@ body {
     margin: 10px auto;
   }
   .projectsContainer .projects {
-    width: 98%;
+    width: 90%;
   }
   .projectsContainer .projects div:last-child {
     margin-bottom: 60px;
