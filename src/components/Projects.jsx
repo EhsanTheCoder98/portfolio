@@ -57,6 +57,12 @@ const Projects = () => {
             Click to see the project
           </a>
         </div>
+        <div>
+          <h1>6.Blog</h1>
+          <p>
+          Currently Developing a blog website utilizing GraphQL in conjunction with MUI for enhanced user interface and functionality.
+          </p>
+        </div>
       </div>
     </div>
   );
