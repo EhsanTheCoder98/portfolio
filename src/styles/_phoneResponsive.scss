@@ -69,27 +69,30 @@
       }
     }
     .skillsContainer{
-      margin-bottom: 40px;
       .container{
         flex-direction: column;
         .leftContainer{
+          margin: 10px auto;
           h1{
             font-size: 2rem;
             width: 100%;
 
           }
           .codingSkills{
+            margin-bottom: 40px;
             span{
               font-size: 1.4rem;
             }
           }
         }
         .rightContainer{
+          margin: 10px auto;
           h1{
             font-size: 2rem;
             width: 100%;
           }
           .softSkills{
+            margin-bottom: 40px;
             span{
               font-size: 1.4rem;
             }
