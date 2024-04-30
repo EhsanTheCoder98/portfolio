@@ -675,9 +675,6 @@ body {
   .educationContainer .eachJourneyDiv div p {
     font-size: 1rem;
   }
-  .skillsContainer {
-    margin-bottom: 40px;
-  }
   .skillsContainer .container {
     flex-direction: column;
   }
@@ -691,6 +688,9 @@ body {
     font-size: 2rem;
     width: 100%;
   }
+  .skillsContainer .container .leftContainer .codingSkills {
+    margin-bottom: 40px;
+  }
   .skillsContainer .container .leftContainer .codingSkills span {
     font-size: 1.4rem;
   }
@@ -703,6 +703,9 @@ body {
   .skillsContainer .container .rightContainer h1 {
     font-size: 2rem;
     width: 100%;
+  }
+  .skillsContainer .container .rightContainer .softSkills {
+    margin-bottom: 40px;
   }
   .skillsContainer .container .rightContainer .softSkills span {
     font-size: 1.4rem;
