@@ -63,13 +63,39 @@
       }
     }
   }
-  .skillsContainer {
+  .skillsContainer{
     margin-bottom: 40px;
-    .container {
+    .container{
       flex-direction: column;
-      margin-top: 20px;
-      .rightContainer {
+      .leftContainer{
+        width: 70%;
+        height: fit-content;
+        padding-bottom: 50px;
+        h1{
+          font-size: 2rem;
+          width: 100%;
+
+        }
+        .codingSkills{
+          span{
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .rightContainer{
+        width: 70%;
+        height: fit-content;
+        padding-bottom: 50px;
         margin-top: 30px;
+        h1{
+          font-size: 2rem;
+          width: 100%;
+        }
+        .softSkills{
+          span{
+            font-size: 1.4rem;
+          }
+        }
       }
     }
   }

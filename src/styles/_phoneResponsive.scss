@@ -73,6 +73,9 @@
       .container{
         flex-direction: column;
         .leftContainer{
+          width: 70%;
+          height: fit-content;
+          padding-bottom: 50px;
           h1{
             font-size: 2rem;
             width: 100%;
@@ -85,6 +88,10 @@
           }
         }
         .rightContainer{
+          width: 70%;
+          height: fit-content;
+          padding-bottom: 50px;
+
           h1{
             font-size: 2rem;
             width: 100%;
