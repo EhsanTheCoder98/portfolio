@@ -31,7 +31,7 @@ const Main = () => {
           <h1>Front-End Developer</h1>
         </div>
         <p>
-        Hey there! For about a year now, I've been learning all about making websites look great and work smoothly. I've been using ReactJS, a fancy tool for building web stuff, to create this webpage you're looking at. It's like my online resume, where I can show off what I can do as a beginner web developer. Take a look around, and you'll see some projects I've worked on. I'm all about making things easy to use and nice to look at. Thanks for stopping by!
+        Over the past year, I've dedicated myself to mastering the art of creating visually appealing and functional websites. Using ReactJS, a powerful framework for web development, I've crafted various web applications.Eager to expand my knowledge and skills in web development,I am enthusiastic about embracing new technologies and honing my craft every day, currently focusing on learning Next.js. Now, equipped with this knowledge, I am prepared to take the next step in my journey and pursue my first job in the field.
         </p>
         <div className="buttonContainer">
           <button className="button1" onClick={emailHandler}>

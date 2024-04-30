@@ -60,8 +60,11 @@ const Projects = () => {
         <div>
           <h1>6.Blog</h1>
           <p>
-          Currently Developing a blog website utilizing GraphQL in conjunction with MUI for enhanced user interface and functionality.
+          This project maximizes efficiency by leveraging Hygraph, a GraphQL-based Headless CMS, for content management, while enhancing user experience through the utilization of Material-UI (MUI) to deliver a visually appealing and user-friendly interface.
           </p>
+          <a href="https://github.com/EhsanTheCoder98/BlogPedia.git" target="_blank">
+            Click to see the project
+          </a>
         </div>
       </div>
     </div>
